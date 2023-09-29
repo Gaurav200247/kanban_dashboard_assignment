@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo_container {
+  @apply flex justify-center items-center px-5 py-3 text-[1.1rem];
+}
+.links_container {
+  @apply flex flex-col justify-start items-start w-full pt-3 pb-3;
+}
+.single_sidebar_link {
+  @apply w-full flex  justify-center md:justify-between items-center py-[10px] text-[0.9rem] cursor-pointer;
+}
+
+.single_sidebar_link > p:first-child {
+  @apply flex justify-start items-center;
+}
+
+.single_sidebar_link > p:last-child {
+  @apply flex justify-end items-center;
+}
+
+.number_tag {
+  @apply bg-blue-400 p-1 px-2 text-[0.6rem] font-semibold rounded-full;
+}
+
+.string_tag {
+  @apply bg-pink-600 px-3 py-1 text-[0.6rem] font-medium rounded-2xl;
+}
+.inactive_link {
+  @apply text-[#464366];
+}
+.active_link {
+  @apply text-[#7878f0];
+}
+.selected_link {
+  @apply text-[#6518c2];
+}
+
+.promo_container {
+  @apply p-2 w-full hidden md:flex justify-center items-center;
+}
+.promo_block {
+  @apply flex justify-center items-center overflow-hidden rounded-lg bg-gradient-to-br from-blue-600 to-blue-500 p-3 shadow-md;
+}
+
+/* -------------page title------------ */
+
+.page_title_block {
+  @apply flex-col justify-between h-full;
+}
+.outlined_btn {
+  @apply border-2 border-[#7879F1];
+}
+.filled_btn {
+  @apply font-semibold;
+}
+.avatar {
+  @apply w-10 h-10 border-black border-2 shadow-md rounded-full;
+}
+.task_avatars {
+  @apply w-7 h-7 border-black border-2 shadow-md rounded-full;
+}
+
+.custom_shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
